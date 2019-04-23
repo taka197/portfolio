@@ -1,0 +1,148 @@
+/* posted_screen.php */
+html {
+  min-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1b2538;
+}
+
+ul h1 {
+  float: left;
+  color: white;
+  padding: 2px 14px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+li {
+  float: left;
+  border-left: 1px solid #bbbbbb;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #a9bce2;
+}
+
+.login-name {
+  text-align: right;
+  padding-top: 15px;
+  color: white;
+}
+
+.active {
+  background-color: #da3c41;
+}
+
+header h1 {
+  background-color: white;
+  width: 100%;
+}
+
+#title {
+  color: #0099FF;
+  padding: 70px;
+}
+
+body {
+  background: linear-gradient(#05FBFF, #1E00FF);
+}
+
+hr {
+  color: white;
+  height: 1px;
+  border: none;
+  border-top: 1px dotted;
+  padding-top: 30px;
+
+}
+
+h2 {
+  color: white;
+}
+
+table{
+  color: white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 95%;
+}
+
+table tr{
+  cursor: pointer;
+}
+
+table tr:hover{
+  background-color: #d4f0fd;
+}
+
+table th,table td{
+  text-align: center;
+
+  padding: 10px 0;
+}
+
+footer {
+  padding: 120px 0;
+  text-align: center;
+  color: #aaa;
+}
+
+/* posts_login.php */
+body,p,form,input{margin: 0}
+#form {
+  color: white;
+  width: 400px;
+  margin: 30px auto;
+  padding: 70px;
+  border: 1px solid #EEEEEE;
+  line-height: 2;
+}
+
+form p {
+  color: white;
+  font-size: 14px;
+}
+
+.form-title {
+  text-align: center;
+  border-bottom: 2px solid skyblue;
+}
+
+.mail,.pass{
+  margin-bottom: 20px;
+}
+
+input[type="mail"],
+input[type="password"] {
+  width: 300px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.submit {
+  text-align: right;
+}
+
+/*new_posts.php*/
+#new_posts {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
