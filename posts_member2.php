@@ -16,13 +16,15 @@ if (!empty($name && $mail && $pass)) {
 			$_SESSION['id'] = $members['id'];
 			$_SESSION['name'] = $members['name'];
 			echo '会員登録が完了しました';
-			echo '<br><a href="posted_screen.php"> 掲示板へ</a>';
+			echo '<br><br><a href="posted_screen.php">ホームに戻る</a>';
 		}
 	} catch (PDOException $e) {
 		var_dump($e->getMessage());
 		exit;
 	}
 } else {
-	echo 'データを正しく入力してください';
+	echo '入力に誤りがあります';
+	echo '<br><br><a href="posts_member.php">登録画面に戻る</a>';
 }
+
 ?>
