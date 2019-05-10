@@ -1,7 +1,8 @@
 <?php
 session_start();
-if (!isset($_SESSION['name'])) {
-	header('Location: k1.php');
+$user_id = $_SESSION['id'];
+if (!isset($user_id)) {
+	header('Location: posts_member.php');
 }
 ?>
 <!DOCTYPE html>
@@ -12,21 +13,21 @@ if (!isset($_SESSION['name'])) {
 <link rel="stylesheet"href="style.css">
 </head>
 <center>
-<div id="new_posts">
 <body>
-<h1>Posted bulletin board</h1>
-<h2>New posts</h2>
+<h1>New Posts<h1>
+<div id="new_posts">
 <form method="POST" action="posts_end.php">
+<input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
 <p>Name</p>
-<input type="text" name="name" />
+<input type="text" name="name" placeholder="Name"/>
 <p>Title</p>
-<input type="text" name="title" />
+<input type="text" name="title" placeholder="Title" />
 <p>Comment</p>
-<textarea name="text" cols="30" rows="3" maxlength="80" wrap="hard"></textarea>
-<br><br><input type="submit" value="Submit" />
+<textarea name="text" cols="40" rows="7" maxlength="50" wrap="hard"></textarea>
+<br><input type="submit" value="Submit" />
 </form>
-</body>
 </div>
+</body>
 </center>
 </html>
 
